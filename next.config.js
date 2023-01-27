@@ -4,6 +4,13 @@ const nextConfig = {
   experimental:{
     appDir: true,
   },
+  images: {
+    remotePatterns: [
+      {
+        hostname: "www.superherodb.com",
+      }
+    ]
+  }
 };
 
 module.exports = nextConfig

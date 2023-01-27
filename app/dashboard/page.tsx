@@ -1,8 +1,18 @@
+import Image from "next/image";
 
-function Dashboard() {
-  return (
-    <div>Dashboard</div>
-  )
+async function getData() {
+  const response = await fetch('https://superheroapi.com/api/1646193842463635/414/image');
+  return response.json();
 }
 
-export default Dashboard
+async function Dashboard() {
+  const data = await getData();
+
+  return (
+      <div>
+        <Image width="350" height="350" src={data.url} alt="Heroe" />
+      </div>
+    );
+}
+
+export default Dashboard;
