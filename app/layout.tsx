@@ -6,7 +6,10 @@ export default function RootLayout({
   return (
     <html>
       <head />
-      <body>{children}</body>
+      <body>
+        <h3> This is layout </h3>
+        {children}
+        </body>
     </html>
   )
 }

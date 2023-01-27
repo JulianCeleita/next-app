@@ -1,8 +1,11 @@
+import NotFoundComponent from "./components/NotFoundComponent";
 
 function subpage() {
   return (
-    <div>Subpage</div>
-  )
+    <div>
+      <NotFoundComponent/>
+    </div>
+  );
 }
 
 export default subpage
